@@ -1,0 +1,11 @@
+{
+  "icon": "icon-form-general",
+  "title": {
+      "en": "Add station"
+  },
+  "context": {
+      "person": true,
+      "place": true,
+      "expression": "contact.contact_type === 'c01_country'"
+  }
+}

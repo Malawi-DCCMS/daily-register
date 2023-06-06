@@ -1,0 +1,195 @@
+{
+  "locales": [
+    {
+      "code": "en",
+      "name": "English"
+    }
+  ],
+  "locale": "en",
+  "locale_outgoing": "en",
+  "date_format": "D MMM, YYYY",
+  "reported_date_format": "DD-MMM-YYYY HH:mm:ss",
+  "forms_only_mode": false,
+  "district_admins_access_unallocated_messages": false,
+  "public_access": false,
+  "default_country_code": 1,
+  "roles": {
+    "assistant": {
+      "name": "usertype.assistant",
+      "offline": true
+    },
+    "meteorologist": {
+      "name": "usertype.meteorologist",
+      "offline": true
+    }
+  },
+  "permissions": {
+    "can_view_contacts": [
+      "assistant",
+      "meteorologist"
+    ],
+    "can_view_contacts_tab": [
+      "assistant",
+      "meteorologist"
+    ],
+    "can_create_places": [
+      "meteorologist"
+    ],
+    "can_update_places": [
+      "meteorologist"
+    ],
+    "can_create_people": [
+      "meteorologist"
+    ],
+    "can_delete_contacts": [
+      "meteorologist"
+    ],
+    "can_view_reports": [
+      "assistant",
+      "meteorologist"
+    ],
+    "can_view_reports_tab": [
+      "assistant",
+      "meteorologist"
+    ],
+    "can_view_unallocated_data_records": [
+      "meteorologist"
+    ],
+    "can_create_records": [
+      "assistant",
+      "meteorologist"
+    ],
+    "can_update_reports": [
+      "meteorologist",
+      "assistant"
+    ],
+    "can_delete_reports": [
+      "meteorologist"
+    ],
+    "can_verify_reports": [
+      "meteorologist"
+    ],
+    "can_edit_verification": [
+      "meteorologist"
+    ],
+    "can_bulk_delete_reports": [
+      "meteorologist"
+    ],
+    "can_create_users": [],
+    "can_delete_users": [],
+    "can_view_users": [],
+    "can_update_users": [],
+    "can_configure": [],
+    "can_access_gateway_api": [],
+    "can_delete_messages": [],
+    "can_edit": [
+      "assistant",
+      "meteorologist"
+    ],
+    "can_edit_profile": [
+      "assistant",
+      "meteorologist"
+    ],
+    "can_export_all": [],
+    "can_export_contacts": [],
+    "can_export_feedback": [],
+    "can_export_messages": [],
+    "can_export_dhis": [],
+    "can_log_out_on_android": [
+      "assistant",
+      "meteorologist"
+    ],
+    "can_view_analytics": [
+      "meteorologist"
+    ],
+    "can_view_analytics_tab": [
+      "meteorologist"
+    ],
+    "can_aggregate_targets": [
+      "meteorologist"
+    ],
+    "can_view_call_action": [],
+    "can_view_last_visited_date": [],
+    "can_view_uhc_stats": [],
+    "can_view_messages": [],
+    "can_view_message_action": [],
+    "can_view_messages_tab": [],
+    "can_view_outgoing_messages": [],
+    "can_view_tasks": [
+      "assistant"
+    ],
+    "can_view_tasks_tab": [
+      "assistant"
+    ],
+    "can_view_tasks_group": [],
+    "can_write_wealth_quintiles": [],
+    "can_upgrade": []
+  },
+  "contact_types": [
+    {
+      "id": "c01_country",
+      "name_key": "contact.type.country",
+      "group_key": "contact.type.country.plural",
+      "create_key": "contact.type.country.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "medic-health-center",
+      "create_form": "form:contact:country:create",
+      "edit_form": "form:contact:country:edit"
+    },
+    {
+      "id": "c02_station",
+      "name_key": "contact.type.station",
+      "group_key": "contact.type.station.plural",
+      "create_key": "contact.type.station.new",
+      "edit_key": "contact.type.place.edit",
+      "icon": "medic-health-center",
+      "create_form": "form:contact:station:create",
+      "edit_form": "form:contact:station:edit",
+      "parents": [
+        "c01_country"
+      ]
+    },
+    {
+      "id": "c03_assistant",
+      "name_key": "contact.type.assistant",
+      "group_key": "contact.type.assistant.plural",
+      "create_key": "contact.type.assistant.new",
+      "edit_key": "contact.type.assistant.edit",
+      "parents": [
+        "c02_station"
+      ],
+      "icon": "medic-person",
+      "create_form": "form:contact:assistant:create",
+      "edit_form": "form:contact:assistant:edit",
+      "person": true
+    },
+    {
+      "id": "c04_meteorologist",
+      "name_key": "contact.type.meteorologist",
+      "group_key": "contact.type.meteorologist.plural",
+      "create_key": "contact.type.meteorologist.new",
+      "edit_key": "contact.type.meteorologist.edit",
+      "parents": [
+        "c01_country"
+      ],
+      "icon": "medic-person",
+      "create_form": "form:contact:meteorologist:create",
+      "edit_form": "form:contact:meteorologist:edit",
+      "person": true
+    }
+  ],
+  "setup_complete": true,
+  "transitions": {
+    "accept_patient_reports": false,
+    "conditional_alerts": false,
+    "default_responses": false,
+    "update_sent_by": false,
+    "registration": false,
+    "update_clinics": false,
+    "update_notifications": false,
+    "update_scheduled_reports": false,
+    "update_sent_forms": false,
+    "generate_patient_id_on_people": false,
+    "death_reporting": false
+  }
+}

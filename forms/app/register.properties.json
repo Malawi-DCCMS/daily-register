@@ -1,0 +1,5 @@
+{
+  "context": {
+    "expression": "contact.contact_type === 'c02_station' && user.contact_type === 'c03_assistant'"
+  }
+}

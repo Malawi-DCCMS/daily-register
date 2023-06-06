@@ -1,0 +1,26 @@
+{
+  "name": "daily-register",
+  "version": "1.0.0",
+  "description": "Automated daily register app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Malawi-DCCMS/daily-register.git"
+  },
+  "author": "Daniel Mwakanema",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Malawi-DCCMS/daily-register/issues"
+  },
+  "homepage": "https://github.com/Malawi-DCCMS/daily-register#readme",
+  "devDependencies": {
+    "@medic/eslint-config": "^1.1.0",
+    "chai": "^4.3.7",
+    "cht-conf": "^3.18.3",
+    "cht-conf-test-harness": "^3.0.10",
+    "mocha": "^10.2.0"
+  }
+}

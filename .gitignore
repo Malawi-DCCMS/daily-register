@@ -1,0 +1,9 @@
+forms/**/*.xml
+backups
+app_settings.json
+.env
+.~lock*
+.snapshots/
+node_modules/
+.DS_Store
+dist/

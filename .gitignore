@@ -1,4 +1,5 @@
 forms/**/*.xml
+forms/**/~$*
 backups
 app_settings.json
 .env

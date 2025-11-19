@@ -1,8 +1,8 @@
 {
   "title": "DCCMS Daily Register",
   "resources": {
-    "logo": "weather-station.png",
-    "favicon": "weather-station.png",
-    "icon": "weather-station.png"
+    "logo": "app-logo.svg",
+    "favicon": "app-logo.svg",
+    "icon": "app-logo.svg"
   }
 }
